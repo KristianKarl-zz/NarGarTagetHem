@@ -8,7 +8,18 @@ It shows if the trains are on time, and when they will go. If they are late, the
 
 You need KDE 4.2
 
-cd /where/your/applet/is/installed
+You need an API key from trafiklab.se, see 
+http://www.trafiklab.se/kom-igang
+
+In the file: narGarTagetHemPlasmoid.cpp
+Change <YOU API KEY HERE> to your own API key.
+
+  void narGarTagetHemPlasmoid::updateDeparture() {
+    QString baseUrl = "https://api.trafiklab.se/sl/realtid/GetDpsDepartures.XML";
+    QString key = "<YOU API KEY HERE>";
+
+
+
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` .. OR cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS .. 
@@ -27,7 +38,7 @@ plasmoidviewer YourAppletName
 You might need to run kbuildsycoca4
 in order to get the .desktop file recognized.
 
--- Tutorials and resources --
+# Tutorials and resources
 The explanation of the template
 http://techbase.kde.org/index.php?title=Development/Tutorials/Plasma/GettingStarted
 
