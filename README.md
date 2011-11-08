@@ -14,9 +14,11 @@ http://www.trafiklab.se/kom-igang
 In the file: narGarTagetHemPlasmoid.cpp
 Change <YOU API KEY HERE> to your own API key.
 
-  void narGarTagetHemPlasmoid::updateDeparture() {
-    QString baseUrl = "https://api.trafiklab.se/sl/realtid/GetDpsDepartures.XML";
-    QString key = "<YOU API KEY HERE>";
+`<code>`
+void narGarTagetHemPlasmoid::updateDeparture() {
+  QString baseUrl = "https://api.trafiklab.se/sl/realtid/GetDpsDepartures.XML";
+  QString key = "<YOU API KEY HERE>";
+`</code>`
 
 
 
