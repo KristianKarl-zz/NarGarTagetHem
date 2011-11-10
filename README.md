@@ -21,24 +21,27 @@ void narGarTagetHemPlasmoid::updateDeparture() {
 ```
 
 
-
+```
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` .. OR cmake -DCMAKE_INSTALL_PREFIX=$KDEDIRS .. 
 make
 sudo make install OR su -c "make install"
-
+```
 (your $KDEDIRS is where you install your KDE 4)
 
 Restart plasma to load the applet 
+```
 kquitapp plasma
 plasma
+```
 
 or view it with 
+```
 plasmoidviewer YourAppletName
+```
 
-You might need to run kbuildsycoca4
-in order to get the .desktop file recognized.
+You might need to run kbuildsycoca4 in order to get the .desktop file recognized.
 
 # Tutorials and resources
 The explanation of the template
