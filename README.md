@@ -4,6 +4,8 @@ This is a KDE plasmoid, which uses trafiklab.se in order to display realtime inf
 It shows if the trains are on time, and when they will go. If they are late, the plasmoid will turn red. If they are on time, it will be green.
 
 
+I have hard coded Stockholms Central trains going south, and Rönninge with trains going north. So you would need to change it.
+
 # To install
 
 You need KDE 4.2
